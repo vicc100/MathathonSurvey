@@ -93,9 +93,9 @@
     app.appendChild(
       h("div", { class: "wrap" },
         h("section", { class: "hero" },
-          h("span", { class: "eyebrow" }, "Audience Survey"),
-          h("h1", null, "Help us understand the ", h("span", { class: "hl" }, "Mathathon"), " community."),
-          h("p", null, "Three short surveys on who you are, where you've studied, and how you see the future of AI, mathematics and academia. Take one or all three: each takes just a few minutes."),
+          h("span", { class: "eyebrow" }, "Mathathon Participant Survey"),
+          h("h1", null, "Help us better understand ", h("span", { class: "hl" }, "Mathathon"), " participants!"),
+          h("p", null, "Surveys on your demographics, educational background, and perspectives on the future of math + AI. Come by the Fuel Station (Beckman Mall) to exchange survey participation for drinks and snacks!"),
           DEMO ? h("div", { class: "banner" }, "Preview mode: Supabase isn't configured yet, so responses are saved only in this browser.") : null
         ),
         h("div", { class: "progress-summary" },
