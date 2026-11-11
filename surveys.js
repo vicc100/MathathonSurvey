@@ -12,8 +12,8 @@ const PREFER_NOT = "Prefer not to say";
 window.SURVEYS = [
   {
     id: "demographics",
-    title: "About You",
-    blurb: "Basic demographic information so we can understand who's in the room.",
+    title: "Demographics",
+    blurb: "Basic demographic information.",
     minutes: 2,
     accent: "teal",
     questions: [
@@ -36,8 +36,8 @@ window.SURVEYS = [
       {
         id: "home_country",
         type: "text",
-        label: "Where are you from?",
-        hint: "Country (and state/region if you like)",
+        label: "Where were you born?",
+        hint: "Country and state/region",
         placeholder: "e.g. United States — California",
         required: true,
       },
@@ -104,8 +104,8 @@ window.SURVEYS = [
   },
   {
     id: "future_of_ai",
-    title: "The Future of AI",
-    blurb: "What you expect versus what you hope for, and how optimistic you feel about AI, mathematics and academia.",
+    title: "Perspectives on the Future",
+    blurb: "Share your perspective on the future of AI, mathematics and academia.",
     minutes: 4,
     accent: "orange",
     questions: [
@@ -113,14 +113,12 @@ window.SURVEYS = [
         id: "ai_think",
         type: "textarea",
         label: "What do you think the future of AI will look like?",
-        hint: "Your honest prediction: where is this actually heading?",
         required: true,
       },
       {
         id: "ai_hope",
         type: "textarea",
         label: "What do you hope the future of AI looks like?",
-        hint: "Your ideal outcome, which may be different from your prediction.",
         required: true,
       },
       {
@@ -187,18 +185,12 @@ window.SURVEYS = [
           "Not sure",
         ],
       },
-      {
-        id: "ai_one_thing",
-        type: "textarea",
-        label: "If AI could do one thing for you or your field, what would it be?",
-        rows: 3,
-      },
     ],
   },
   {
     id: "education",
-    title: "Education & Career",
-    blurb: "Your academic background, where you've studied, and where you're headed.",
+    title: "Educational/Professional Background",
+    blurb: "Information about your academic and professional career.",
     minutes: 3,
     accent: "teal",
     questions: [
@@ -246,14 +238,14 @@ window.SURVEYS = [
       {
         id: "research_interests",
         type: "text",
-        label: "What are your specific research interests?",
+        label: "What are your specific research interests? (if any)",
         placeholder: "e.g. number theory, formal verification, LLM reasoning…",
       },
       {
         id: "current_career",
         type: "text",
-        label: "What career are you currently working in, if any?",
-        placeholder: "e.g. student, ML engineer, professor of mathematics…",
+        label: "What career are you currently working in? (if any)",
+        placeholder: "e.g. student, software engineer, professor of mathematics…",
       },
       {
         id: "career_goal",
@@ -289,14 +281,14 @@ window.SURVEYS = [
       {
         id: "proof_assistants",
         type: "multi",
-        label: "Have you used any proof assistants or formal verification tools?",
+        label: "Have you ever used any proof assistants or formal verification tools?",
         options: ["Lean", "Coq / Rocq", "Isabelle", "Agda", "None", ],
         other: true,
       },
       {
         id: "competitions",
         type: "multi",
-        label: "Have you taken part in any of these?",
+        label: "Have you ever participated in any of these?",
         options: ["Math olympiads (AMC, AIME, IMO…)", "Putnam", "Hackathons", "Kaggle / ML competitions", "Research programs (REU, SURF…)", "None"],
         other: true,
       },
